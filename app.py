@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 import json
-from waitress import serve
 
 app = Flask(__name__)
 
@@ -21,5 +20,3 @@ def book_gen():
 def nilam_cnp():
     datas = get_data()
     return render_template('nilamcnp.html', datas=datas)
-
-serve(app, host='0.0.0.0', port=5000)
