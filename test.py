@@ -9,11 +9,25 @@ def get_data():
 
 sys("cls")
 
+a = None
+b = None
+c = None
+
 while 1:
-    name = input(f"{Fore.GREEN}Name: ")
+    name = input(f"{Fore.LIGHTGREEN_EX}Name: ")
     pulish_time = input("Publish time: ")
+    if pulish_time == "":
+        pulish_time=a
     pulisher = input("Publisher: ")
+    if pulisher == "":
+        pulisher=b
     author = input("Author: ")
+    if author == "":
+        author=c
+
+    a = pulish_time
+    b = pulisher
+    c = author
 
     datas = get_data()
 

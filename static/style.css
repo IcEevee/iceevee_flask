@@ -70,7 +70,7 @@ section {
     text-align: center;
 }
 
-.contact {
+.contact, .bluebg {
     background-image: linear-gradient(
         to bottom left,
       rgb(29, 210, 255), 
