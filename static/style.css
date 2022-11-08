@@ -110,6 +110,7 @@ table, th, td {
     color: white;
     border-radius: 18px;
     background-color: rgb(255, 110, 26);
+    border: none;
     transition: background-color 0.15s;
 }
 
