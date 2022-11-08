@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Book Generator</title>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div>
+    <ul class="top-bar">
+
+      <li>
+        <font></font>
+      </li>
+
+      <li>
+        <a href="">
+          <font class="iceevee">BookGen</font>
+        </a>
+      </li>
+    
+      <li class="rightli">
+        <font></font>
+      </li>
+
+          
+      <li class="rightli">
+        <a href="/">
+          <font>Home</font>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+  <br>
+  <section>
+    <h1 class="center">
+      Book Generator
+    </h1>
+
+    <p class="center">
+        *Books aren't 100% accurate
+    </p>
+    
+    <div class="centerdiv">
+        <button id="generate">Generate!</button>
+    </div>
+
+
+    <br>
+
+    <table style="width: 100%;">
+        <tbody>
+        <tr style="font-weight: bold;">
+            <td style="width: 25%">Name</td>
+            <td style="width: 25%">Author</td>
+            <td style="width: 25%">Publisher</td>
+            <td style="width: 25%">Publish time</td>
+        </tr>
+
+        <tr>
+            <td id="name">...</td>
+            <td id="author">...</td>
+            <td id="publisher">...</td>
+            <td id="publish_time">...</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+  </section>
+
+
+  <br>
+
+  <section>
+    <footer class="center">Made by IcEevee's determination</footer>
+  </section>
+
+  <br>
+  
+  <script src="{{ url_for('static', filename='bookgenerator.js') }}">
+  </script>
+
+</body>
+</html>
